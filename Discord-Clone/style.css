@@ -114,13 +114,12 @@ a {
   font-size: 14px;
   background-color: white;
   cursor: pointer;
-  transition-duration: 0.4s;
+  transition: box-shadow 0.4s ease, color 0.4s ease;
 }
 .open-discord:hover {
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.13),
     0 16px 30px 0 rgba(0, 0, 0, 0.05);
   color: #404eed;
-  transition-duration: 0.4s;
 }
 
 .menu {
@@ -165,7 +164,6 @@ a {
 .imagine-a-place-texts-buttons h1 {
   font-family: ABC-Ginto-Nord-black;
   font-size: 3.5rem;
-  font-weight: 900;
   color: white;
   height: fit-content;
   width: 70%;
@@ -203,13 +201,12 @@ a {
   font-size: 1.7em;
   color: black;
   padding: 13px 30px;
-  transition-duration: 0.4s;
+  transition: box-shadow 0.4s ease, color 0.4s ease;
 }
 .download-open-button a:hover {
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.13),
     0 16px 30px 0 rgba(0, 0, 0, 0.05);
   color: #404eed;
-  transition-duration: 0.4s;
 }
 .download-open-button img {
   padding: 0 10px 0 0;
@@ -225,13 +222,12 @@ a {
   padding: 13px 30px;
   font-size: 1.7em;
   height: fit-content;
-  transition-duration: 0.4s;
+  transition: box-shadow 0.4s ease, background-color 0.4s ease;
 }
 .download-open-button button:hover {
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.13),
     0 16px 30px 0 rgba(0, 0, 0, 0.05);
   background-color: #313338;
-  transition-duration: 0.4s;
 }
 
 .images-blue-div {
@@ -268,15 +264,105 @@ a {
   right: 0;
   background-color: white;
   width: 330px;
-  right: 0;
-  z-index: 9; /*change afterwards*/
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px 0 0 5px;
+  color: #23272a;
+  font-family: gg-sans-normal;
+  display: none;
+}
+.logo-cross {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28.5px 25.5px 33px 22px;
+  height: fit-content;
+}
+.gray-line {
+  height: 1.5px;
+  width: 242px;
+  background-color: #ebedef;
+  margin-left: 22px;
+  margin-bottom: 15px;
 }
 .slidemenu ul {
   list-style-type: none;
 }
-.blue-div{
-  filter: brightness(80%);
+.slidemenu li {
+  font-family: gg-sans-normal;
+  font-size: 16.5px;
+  margin-left: 23px;
+  padding-left: 17px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
 }
-body .slidemenu {
-  filter: brightness(100%);
+.slidemenu .active{
+  background-color: #f6f6f6;
+  border-radius: 9px;
+  color: #00b0f4;
+  width: 240px;
+}
+.slidemenu li:hover{
+  text-decoration: underline;
+}
+.slidemenu li:active {
+  color: #00b0f4;
+}
+.download-for-windows a{
+  background-color:#5865f2;
+  color: white;
+  border: none;
+  height:fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px;
+  margin-left: 26px;
+  margin-right: 26px;
+  width: 282px;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 22px;
+}
+.download-for-windows img{
+  padding-right: 10px;
+  height: 20px;
+}
+.download-for-windows a:hover {
+  background-color: #7983f5;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1),
+    0 16px 30px 0 rgba(0, 0, 0, 0.05);
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.create-an-invite-texts {
+  display: flex;
+  flex-direction: column;
+  padding: 170px 0;
+  padding-left: 120px;
+}
+.create-an-invite-texts h1 {
+  font-family: gg-sans-bold;
+  font-size: 48px;
+  width: 370px;
+  padding-bottom: 20px;
+  line-height: 55px;
+}
+.create-an-invite-texts p {
+  font-family: gg-sans-normal;
+  font-size: 20px;
+  width: 370px;
+  line-height: 34px;
 }
