@@ -440,7 +440,6 @@ a {
   line-height: 30px;
 }
 
-
 .start-journey {
   position: relative;
   display: flex;
@@ -492,7 +491,7 @@ a {
     0 16px 30px 0 rgba(0, 0, 0, 0.05);
 }
 
-footer{
+footer {
   background-color: #23272a;
 }
 .footer-items {
@@ -500,7 +499,6 @@ footer{
   flex-direction: column;
   align-items: center;
   padding: 80px 0;
-  
 }
 .above-line {
   display: flex;
@@ -514,11 +512,11 @@ footer{
 .countries-logo {
   width: fit-content;
 }
-.lists{
+.lists {
   display: flex;
-  column-gap: 80px;
+  column-gap: 70px;
 }
-.countries select{
+.countries select {
   background-color: #23272a;
   border: none;
   height: fit-content;
@@ -526,40 +524,42 @@ footer{
   font-size: 16px;
   font-family: gg-sans-normal;
   margin-top: 20px;
+  cursor: pointer;
 }
-.above-line ul{
+.above-line ul {
   list-style-type: none;
   line-height: 33px;
 }
-.above-line li:hover{
+.above-line li:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-.logos{
+.logos {
   display: flex;
   align-items: center;
   margin-top: 40px;
   column-gap: 23px;
+  cursor: pointer;
 }
-.above-line p{
+.above-line p {
   color: #5865f2;
   padding-bottom: 25px;
 }
 .policies-list {
   padding-right: 30px;
 }
-.blue-line{
+.blue-line {
   background-color: #5865f2;
   height: 1px;
   width: 62%;
 }
-.below-line{
+.below-line {
   display: flex;
   width: 62%;
   justify-content: space-between;
   padding-top: 30px;
 }
-#open-discord-footer{
+#open-discord-footer {
   font-size: 14px;
   background-color: #5865f2;
   color: white;
@@ -567,6 +567,21 @@ footer{
   border-radius: 30px;
   transition: background-color 0.3s;
 }
-#open-discord-footer:hover{
+#open-discord-footer:hover {
   background-color: #7983f5;
+}
+
+/* Fade In animation from here on */
+.scrolling img,
+.scrolling h1,
+.scrolling p {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity .8s, transform .8s;
+}
+.animateFade img,
+.animateFade h1,
+.animateFade p {
+  transform: translateY(0px);
+  opacity: 1;
 }
