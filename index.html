@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Discord | Your Place To Talk and Hang Out</title>
+    <link rel="icon" type="image/svg" href="discord-icon-logo.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="blue-div" class="blue-div">
+      <div class="nav">
+        <div class="logo">
+          <a href="#">
+            <img src="images/discord-logo-white.svg" />
+          </a>
+        </div>
+        <div class="navigate">
+          <a class="nav-text" href="">Download</a>
+          <a class="nav-text" href="">Nitro</a>
+          <a class="nav-text" href="">Discover</a>
+          <a class="nav-text" href="">Safety</a>
+          <a class="nav-text" href="">Support</a>
+          <a class="nav-text" href="">Blog</a>
+          <a class="nav-text" href="">Careers</a>
+        </div>
+        <div class="open-discord-lines">
+          <a href="">
+            <button type="button" class="open-discord">Open Discord</button>
+          </a>
+          <button type="button" onclick="openSlideMenu()" id="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+        </div>
+      </div>
+      <div class="imagine-a-place-texts-buttons">
+        <h1>IMAGINE A PLACE...</h1>
+        <p>
+          ...where you can belong to a school club, a gaming group, or a
+          worldwide art community. Where just you and a handful of friends can
+          spend time together. A place that makes it easy to talk every day and
+          hang out more often.
+        </p>
+        <div class="download-open-button">
+          <a href="">
+            <img src="images/download-icon.svg" />Download for Windows
+          </a>
+          <button type="button">Open Discord in your browser</button>
+        </div>
+      </div>
+      <div class="images-blue-div">
+        <img class="bg-blue-div" src="images/blue-div-background.svg" />
+        <img class="left-img" src="images/blue-div-left-image.svg" />
+        <img class="right-img" src="images/blue-div-right-image.svg" />
+      </div>
+    </div>
+    <div id="slidemenu">
+      <div class="logo-cross">
+        <a href="#">
+          <img src="images/discord-mark-black.svg" height="23" width="125" />
+        </a>
+        <button type="button" onclick="crossMenu()">
+          <img class="cross" src="images/x-mark.svg" height="23px" />
+        </button>
+      </div>
+      <div class="gray-line"></div>
+      <ul class="menu-list">
+        <li id="home" class="active" onclick="menuClick('home')">Home</li>
+        <li id="download" onclick="menuClick('download')">Download</li>
+        <li id="nitro" onclick="menuClick('nitro')">Nitro</li>
+        <li id="discover" onclick="menuClick('discover')">Discover</li>
+        <li id="safety" onclick="menuClick('safety')">Safety</li>
+        <li id="support" onclick="menuClick('support')">Support</li>
+        <li id="blog" onclick="menuClick('blog')">Blog</li>
+        <li id="careers" onclick="menuClick('careers')">Careers</li>
+      </ul>
+      <div class="download-for-windows">
+        <a href="#"
+          ><img src="images/download-white-icon.svg" />Download for Windows</a
+        >
+      </div>
+    </div>
+    <div id="create-an-invite" class="create-an-invite rows scrolling">
+      <img
+        class="create-an-invite-image"
+        src="images/create-an-invite-image.svg"
+      />
+      <div class="create-an-invite-texts rows-text">
+        <h1 class="rows-h1-text">
+          Create an invite-only place where you belong
+        </h1>
+        <p class="rows-p-text">
+          Discord servers are organized into topic-based channels where you can
+          collaborate, share, and just talk about your day without clogging up a
+          group chat.
+        </p>
+      </div>
+    </div>
+    <div id="hanging-out" class="hanging-out rows scrolling">
+      <div class="hanging-out-text rows-text">
+        <h1 class="rows-h1-text">Where hanging out is easy</h1>
+        <p class="rows-p-text">
+          Grab a seat in a voice channel when you’re free. Friends in your
+          server can see you’re around and instantly pop in to talk without
+          having to call.
+        </p>
+      </div>
+      <img class="hanging-out-image" src="images/hanging-out-image.svg" />
+    </div>
+    <div class="few-to-fandom rows scrolling">
+      <img
+        class="few-to-fandom-image"
+        src="images/few-to-fandom-image.svg"
+        height="430px"
+      />
+      <div class="few-to-fandom-text rows-text">
+        <h1 class="rows-h1-text">From few to a fandom</h1>
+        <p class="rows-p-text">
+          Get any community running with moderation tools and custom member
+          access. Give members special powers, set up private channels, and
+          more.
+        </p>
+      </div>
+    </div>
+    <div class="reliable-tech-div scrolling">
+      <div class="reliable-tech-text">
+        <h1>RELIABLE TECH FOR STAYING CLOSE</h1>
+        <p>
+          Low-latency voice and video feels like you’re in the same room. Wave
+          hello over video, watch friends stream their games, or gather up and
+          have a drawing session with screen share.
+        </p>
+      </div>
+      <img src="images/reliable-tech-image.svg" height="725px" />
+      <div class="start-journey">
+        <img src="images/ready-to-start-image.svg" />
+        <p>Ready to start your journey?</p>
+      </div>
+      <div class="download-for-windows-bottom">
+        <a href="#">
+          <img src="images/download-white-icon.svg" />Download for Windows
+        </a>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-items">
+        <div class="above-line">
+          <div class="countries-logos">
+            <div class="countries">
+              <label for="country-names"></label>
+              <select name="country-names" id="country-names">
+                <option value="#">Deutsch</option>
+                <option value="#">English, USA</option>
+                <option value="#">Espanol</option>
+                <option value="#">Soumi</option>
+                <option value="#">Francais</option>
+                <option value="#">Hindi</option>
+                <option value="#">Hrvatski</option>
+                <option value="#">Magyar</option>
+                <option value="#">Italiano</option>
+                <option value="#">Nederlands</option>
+                <option value="#">Norwegian</option>
+                <option value="#">Polski</option>
+                <option value="#">Romana</option>
+              </select>
+            </div>
+            <div class="logos">
+              <img src="images/twitter-icon.svg" height="20px" />
+              <img src="images/instagram-logo.svg" height="29px" />
+              <img src="images/facebook-icon.png" height="19px" />
+              <img src="images/yt-icon.svg" height="30px" />
+              <img src="images/tiktok-icon.svg" height="24px" />
+            </div>
+          </div>
+          <div class="lists">
+            <div class="product-list">
+              <p>Product</p>
+              <ul>
+                <li>Download</li>
+                <li>Nitro</li>
+                <li>Status</li>
+                <li>App Directory</li>
+              </ul>
+            </div>
+            <div class="company-list">
+              <p>Company</p>
+              <ul>
+                <li>About</li>
+                <li>Jobs</li>
+                <li>Brand</li>
+                <li>Newsroom</li>
+                <li>Fall Release</li>
+              </ul>
+            </div>
+            <div class="resources-list">
+              <p>Resources</p>
+              <ul>
+                <li>College</li>
+                <li>Support</li>
+                <li>Safety</li>
+                <li>Blog</li>
+                <li>Feedback</li>
+                <li>Developers</li>
+                <li>Streamkit</li>
+                <li>Creators</li>
+                <li>Community</li>
+                <li>Ofiicial 3rd Party March</li>
+              </ul>
+            </div>
+            <div class="policies-list">
+              <p>Policies</p>
+              <ul>
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Cookie Settings</li>
+                <li>Guidelines</li>
+                <li>Acknowledgement</li>
+                <li>License</li>
+                <li>Company Information</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="blue-line"></div>
+        <div class="below-line">
+          <a href="#">
+            <img src="images/discord-logo-white.svg" height="23px" />
+          </a>
+          <a id="open-discord-footer" href="#">
+            <p>Open Discord</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
