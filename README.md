@@ -3,7 +3,7 @@ HTML | CSS | JS  -  Discord Page Clone - this is my project of cloning Discord's
 
 -------------------------
 
-Online site link : https://arshiwang.github.io/Discord-Clone/  
+Online site link : https://shiwangaryan.github.io/Discord-Clone/  
 you can visit my site using the github-pages
 
 -------------------------
